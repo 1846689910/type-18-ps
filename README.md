@@ -32,6 +32,13 @@ To build and run the project:
 
 2. Build the project. Enter: `sbt run`. The project builds and starts the embedded HTTP server. Since this downloads libraries and dependencies, the amount of time required depends partly on your connection's speed.
 
-3. After the message `Server started, ...` displays, enter the following URL in a browser: <http://localhost:3000>
+3. install dependencies for type-18
+```bash
+cd public
+npm i
+cd ..
+```
+
+4. After the message `Server started, ...` displays, enter the following URL in a browser: <http://localhost:3000>
 
 The Play application responds: `Welcome to the Hello World Tutorial!`

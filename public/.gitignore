@@ -1,0 +1,10 @@
+./node_modules
+node_modules
+.idea
+.idea/workspace.xml
+./temp
+temp
+.vscode
+dist
+.etmp
+.DS_Store
