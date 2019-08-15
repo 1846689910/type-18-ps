@@ -1,4 +1,4 @@
-# Play Hello World Web Tutorial for Scala
+# type-18-ps
 
 To follow the steps in this tutorial, you will need the correct version of Java and sbt. The template requires:
 
@@ -32,6 +32,6 @@ To build and run the project:
 
 2. Build the project. Enter: `sbt run`. The project builds and starts the embedded HTTP server. Since this downloads libraries and dependencies, the amount of time required depends partly on your connection's speed.
 
-3. After the message `Server started, ...` displays, enter the following URL in a browser: <http://localhost:9000>
+3. After the message `Server started, ...` displays, enter the following URL in a browser: <http://localhost:3000>
 
 The Play application responds: `Welcome to the Hello World Tutorial!`
