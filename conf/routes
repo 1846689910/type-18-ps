@@ -8,7 +8,7 @@
 #GET     /tutorial                           controllers.HomeController.tutorial
 
 # An example controller showing a sample home page
-GET     /                                   controllers.Assets.at(path="/public/type-18/dist/js", file="index.html")
+GET     /                                   controllers.Assets.at(path="/public/dist/js", file="index.html")
 # Map static resources from the /public folder to the /assets URL path
-GET     /*file                              controllers.Assets.at(path="/public/type-18/dist/js", file)
+GET     /*file                              controllers.Assets.at(path="/public/dist/js", file)
 
