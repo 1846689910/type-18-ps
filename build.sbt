@@ -7,5 +7,7 @@ lazy val root = (project in file(".")).enablePlugins(PlayScala)
 
 scalaVersion := "2.13.0"
 
+PlayKeys.playDefaultPort := 3000
+
 libraryDependencies += guice
 libraryDependencies += "org.scalatestplus.play" %% "scalatestplus-play" % "4.0.3" % Test
