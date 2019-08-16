@@ -5,3 +5,4 @@ target
 .g8
 .idea
 ./public/.git
+app/tmp
