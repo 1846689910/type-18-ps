@@ -1,4 +1,5 @@
 const shell = require("shelljs");
+const Path = require("path");
 const logger = require("funny-react-app-archetype/config/utils/color-logger");
 const method = process.argv[2];
 
@@ -13,6 +14,8 @@ const baseCommands = {
   build: `${baseCommand("webpack")} --color`
 };
 
+const rmFiles = dir => shell.rm("-rf", dir);
+
 const methods = {
   runDev() {
     shell.exec(baseCommands.runDevServer, {
@@ -25,6 +28,7 @@ const methods = {
     });
   },
   build(){
+    rmFiles(Path.resolve("dist*"));
     shell.exec(baseCommands.build, {
       env: setEnv({ NODE_ENV: "production" })
     });
